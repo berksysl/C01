@@ -1,16 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsoysal <tsoysal@42kocaeli.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/29 17:19:39 by tsoysal           #+#    #+#             */
-/*   Updated: 2021/11/29 17:19:42 by tsoysal          ###   ########.fr       */
+/*   Created: 2021/11/29 18:33:05 by tsoysal           #+#    #+#             */
+/*   Updated: 2021/11/29 18:40:42 by tsoysal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
 
-void	ft_ft(int *nbr)
+void	ft_putchar(char c)
 {
-	*nbr = 42;
+	write(1, &c, 1);
+}
+
+void	ft_putstr(char *str)
+{
+	while (*str != '\0')
+	{
+		ft_putchar(*str);
+		str++;
+	}
 }

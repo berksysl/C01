@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsoysal <tsoysal@42kocaeli.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/29 17:19:39 by tsoysal           #+#    #+#             */
-/*   Updated: 2021/11/29 17:19:42 by tsoysal          ###   ########.fr       */
+/*   Created: 2021/11/29 18:21:50 by tsoysal           #+#    #+#             */
+/*   Updated: 2021/11/29 18:31:43 by tsoysal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void	ft_ft(int *nbr)
+void	ft_ultimate_div_mood(int *a, int *b)
 {
-	*nbr = 42;
+	int	temp_a;
+	int	temp_b;
+
+	temp_a = (*a) / (*b);
+	temp_b = (*a) % (*b);
+	*a = temp_a;
+	*b = temp_b;
 }
